@@ -11,10 +11,10 @@
 import os
 import csv
 #path to collect data from the PyPoll folder
-election_data.csv = os.path.join("../Users/geoff/Documents/Python-Challenge/PyPoll", election_data.csv)
+election_data = os.path.join("../Users/geoff/Documents/Python-Challenge/PyPoll", election_data.csv)
 
 #Read in csv file
-with open('election_data.csv',r) as csvfile:
+with open('election_data',r) as csvfile:
     cvsreader = csv.reader(csvfile, delimiter=",") #---Split the data on commas as iterator
     cvsreader.next() #---Skip header row
     
@@ -36,11 +36,10 @@ with open('election_data.csv',r) as csvfile:
         print("------------------------")
         print("Total Votes: " + row_count)
         print("--------------------------")
-        print(k ":" + y + "%" + "(" + v +")")
+        print(k, ":" + y, + "%" + "(" + v +")")
         print("-------------------------")
         print("Winner: " + winner)
         print("----------------------------")
-        
 
 
 
@@ -51,12 +50,5 @@ with open('election_data.csv',r) as csvfile:
 
 
 
-    #Define function to get unique values = names
-    def unique_list(candidates_list):
-        output_list[]
-        for word in candidates_list:
-            if word not in output_list:
-                output_list.append(word)
-            print(output_list)
-            return output_list
+
     
